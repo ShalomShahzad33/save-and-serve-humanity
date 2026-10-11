@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { DevelopmentBanner } from "@/components/ui/DevelopmentNotice";
 import { siteMeta } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <DevelopmentBanner />
         <SiteHeader />
         <main id="main">{children}</main>
         <SiteFooter />

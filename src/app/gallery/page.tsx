@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 
 import { GalleryIndex } from "@/components/gallery/GalleryIndex";
 import { ScrollRevealMotion } from "@/components/motion/ScrollRevealMotion";
+import { UnderDevelopmentNotice } from "@/components/ui/DevelopmentNotice";
 import { getAllPosts } from "@/lib/content/blog";
 
 export const metadata: Metadata = {
@@ -40,6 +41,18 @@ export default async function GalleryPage() {
   return (
     <>
       <GalleryIndex items={items} postCount={posts.length} />
+      <UnderDevelopmentNotice
+        title="Gallery tools are still under development."
+        description="The public image archive is live from approved story media. The richer gallery experience still needs final lightbox behavior, filtering, and larger archive curation before it should be treated as complete."
+        items={[
+          "Keyboard-accessible lightbox",
+          "Category and year filters",
+          "Larger curated archive batches",
+          "Optional story-linked image trail"
+        ]}
+        href="/blog"
+        linkLabel="Open Story Archive"
+      />
       <ScrollRevealMotion />
     </>
   );
