@@ -1,0 +1,1 @@
+export { ScrollRevealMotion as HomeScrollMotion } from "./ScrollRevealMotion";

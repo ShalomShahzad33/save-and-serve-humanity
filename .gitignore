@@ -1,0 +1,30 @@
+﻿# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# test and browser artifacts
+coverage/
+test-results/
+playwright-report/
+.playwright-cli/
+output/
+
+# local env
+.env
+.env.*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+
+# system/editor
+.DS_Store
+Thumbs.db
+*.log
