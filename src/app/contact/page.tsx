@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 
 import { ContactIndex } from "@/components/contact/ContactIndex";
 import { ScrollRevealMotion } from "@/components/motion/ScrollRevealMotion";
@@ -23,7 +23,7 @@ export default function ContactPage() {
           "Privacy wording",
           "Success and error states"
         ]}
-        href="mailto:info@lavenderblush-herring-796782.hostingersite.com"
+        href="mailto:info@sshpk.org"
         linkLabel="Email SSH Instead"
       />
       <ScrollRevealMotion />

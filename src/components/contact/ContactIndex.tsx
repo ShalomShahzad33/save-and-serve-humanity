@@ -13,8 +13,8 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 const contactChannels = [
   {
     title: "Email",
-    value: "info@lavenderblush-herring-796782.hostingersite.com",
-    href: "mailto:info@lavenderblush-herring-796782.hostingersite.com",
+    value: "info@sshpk.org",
+    href: "mailto:info@sshpk.org",
     description:
       "Use this public email for general questions and organization inquiries.",
     icon: AtSign
@@ -72,7 +72,7 @@ export function ContactIndex() {
               These public contact details come from SSH&apos;s confirmed website source for this rebuild. The message form is still being rebuilt so inquiries have a reliable submission path.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="mailto:info@lavenderblush-herring-796782.hostingersite.com">
+              <ButtonLink href="mailto:info@sshpk.org">
                 Email SSH
               </ButtonLink>
               <ButtonLink href="tel:+923008191404" variant="secondary">
@@ -113,7 +113,7 @@ export function ContactIndex() {
               </div>
 
               <div className="space-y-4 border-l border-[rgba(216,166,106,0.62)] pl-5 text-sm leading-6 text-white/78 sm:text-base sm:leading-7">
-                <p>info@lavenderblush-herring-796782.hostingersite.com</p>
+                <p>info@sshpk.org</p>
                 <p>(+92) 0300 8191404</p>
                 <p>Opposite Christ Church Youhanabad</p>
               </div>

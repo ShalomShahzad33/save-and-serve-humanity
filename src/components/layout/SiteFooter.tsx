@@ -13,8 +13,8 @@ const contactLinks = [
   },
   {
     label: "Email",
-    value: "info@lavenderblush-herring-796782.hostingersite.com",
-    href: "mailto:info@lavenderblush-herring-796782.hostingersite.com",
+    value: "info@sshpk.org",
+    href: "mailto:info@sshpk.org",
     icon: Mail
   },
   {

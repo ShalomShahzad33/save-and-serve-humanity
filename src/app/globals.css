@@ -66,24 +66,6 @@ svg {
   display: block;
 }
 
-.skip-link {
-  position: absolute;
-  left: 1rem;
-  top: 0.75rem;
-  z-index: 100;
-  border-radius: 0.75rem;
-  background: var(--ssh-blue);
-  color: white;
-  font-weight: 700;
-  padding: 0.75rem 1rem;
-  transform: translateY(-160%);
-  transition: transform var(--motion-fast) ease-out;
-}
-
-.skip-link:focus {
-  transform: translateY(0);
-}
-
 .nav-link {
   position: relative;
 }

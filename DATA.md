@@ -828,7 +828,7 @@ Do not use Shalom Maternity Home, Renewal Center, or any event location as the o
 Public contact details from the user-confirmed authoritative SSH website source:
 
 - Location/contact address: Opposite Christ Church Youhanabad
-- Public email: info@lavenderblush-herring-796782.hostingersite.com
+- Public email: info@sshpk.org
 - Phone: (+92) 0300 8191404
 
 **Status:** `USE`
@@ -1506,7 +1506,7 @@ Known facts:
 The website Contact page displays:
 
 - `Opposite Christ Church Youhanabad`
-- `info@lavenderblush-herring-796782.hostingersite.com`
+- `info@sshpk.org`
 - `(+92) 0300 8191404`
 
 **Status:** `USE` unless the user supplies updated contact information.
@@ -1621,12 +1621,12 @@ The PDF lists older contact details including:
 - `www.sshpk.org`
 - `info@sshpk.org`
 
-**Status:** `SUPERSEDED / VERIFY BEFORE USE`
+**Status:** `PARTIALLY SUPERSEDED / USER-CONFIRMED EMAIL`
 
 Publishing rules:
 
-- Do not replace the current website-confirmed contact details with these PDF details.
-- Do not use `sshpk.org` or `info@sshpk.org` as current links unless the user confirms they are active and official.
+- Use the user-confirmed public email `info@sshpk.org`; do not replace the current contact address with the older PDF postal address unless separately confirmed.
+- The email `info@sshpk.org` is now user-confirmed for public site contact. Do not use the older PDF postal address as current unless separately confirmed.
 
 ## PDF financial and donation claims
 

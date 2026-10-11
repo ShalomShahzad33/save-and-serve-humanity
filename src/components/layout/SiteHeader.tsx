@@ -19,9 +19,6 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--ssh-border)] bg-[rgba(252,251,247,0.9)] backdrop-blur-md">
-      <a className="skip-link" href="#main">
-        Skip to content
-      </a>
       <div className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <Link
           aria-label={`${siteMeta.name} home`}
