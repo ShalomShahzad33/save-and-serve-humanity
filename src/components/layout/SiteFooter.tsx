@@ -26,7 +26,8 @@ const contactLinks = [
 ] as const;
 
 const supportLinks = [
-  { label: "Donation readiness", href: "/donate" }
+  { label: "Donation readiness", href: "/donate" },
+  { label: "Privacy", href: "/privacy" }
 ] as const;
 
 export function SiteFooter() {
