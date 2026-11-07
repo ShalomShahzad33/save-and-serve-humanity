@@ -125,9 +125,8 @@ export function OurWorkStoryGateway({ posts }: { posts: BlogPostMeta[] }) {
             </div>
             <div>
               <p className="max-w-[760px] text-base leading-7 text-white/72 sm:text-lg sm:leading-8">
-                Donation and volunteer details should stay honest as SSH adds
-                them. For now, visitors can read the archive, ask questions, or
-                use the Get Involved page to see the available support pathway.
+                Visitors can read the archive, ask questions, or use the Get
+                Involved page to explore practical ways to participate.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                 <ButtonLink href="/get-involved">Get Involved</ButtonLink>
@@ -147,7 +146,7 @@ export function OurWorkStoryGateway({ posts }: { posts: BlogPostMeta[] }) {
                 <UsersRound aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-[var(--ssh-nest-gold)]" />
                 <p>
                   This section deliberately avoids invented volunteer counts,
-                  donor totals, campaign amounts, or partner claims.
+                  activity totals, or partner claims.
                 </p>
               </div>
             </div>

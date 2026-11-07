@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookOpenText, HandHeart, Mail, WalletCards } from "lucide-react";
+import { BookOpenText, HandHeart, Images, Mail } from "lucide-react";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 
@@ -21,12 +21,12 @@ const nextActions = [
     icon: Mail
   },
   {
-    title: "Support pathway",
+    title: "View the archive",
     description:
-      "The donate page is ready to receive the approved giving details once SSH provides them.",
-    href: "/donate",
-    label: "Donate",
-    icon: WalletCards
+      "Continue into the gallery for approved photographs connected to SSH's published work.",
+    href: "/gallery",
+    label: "Gallery",
+    icon: Images
   }
 ];
 
@@ -50,8 +50,8 @@ export function BlogClosingCta() {
           </h2>
           <p className="mt-6 max-w-[680px] text-lg leading-8 text-white/76 sm:text-xl">
             SSH&apos;s archive is meant to point beyond reading. Visitors can keep
-            exploring the work, contact the team, or use the prepared donation
-            route once official giving details are confirmed.
+            exploring the work, contact the team, or continue into the approved
+            image archive.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <ButtonLink href="/get-involved">Get Involved</ButtonLink>
@@ -93,8 +93,8 @@ export function BlogClosingCta() {
             <div className="flex items-start gap-3">
               <HandHeart aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-[var(--ssh-nest-gold)]" />
               <p className="text-sm leading-6 text-white/70 sm:text-base sm:leading-7">
-                Donation copy remains intentionally modest until SSH confirms
-                the official campaign, payment method, and transparency details.
+                Stories and archive images remain grounded in confirmed records
+                rather than unsupported totals or promotional claims.
               </p>
             </div>
           </div>

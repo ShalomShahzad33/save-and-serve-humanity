@@ -26,7 +26,6 @@ const contactLinks = [
 ] as const;
 
 const supportLinks = [
-  { label: "Donation readiness", href: "/donate" },
   { label: "Privacy", href: "/privacy" }
 ] as const;
 
@@ -67,13 +66,6 @@ export function SiteFooter() {
               {siteMeta.description}
             </p>
 
-            <div className="mt-8 max-w-[720px] border-l-2 border-[var(--ssh-nest-gold)] bg-white/6 px-5 py-4">
-              <p className="text-sm leading-6 text-white/64">
-                Donation information has not been provided yet. The donate page
-                is available as a prepared pathway for approved giving details
-                when SSH confirms them.
-              </p>
-            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-8">
@@ -113,7 +105,7 @@ export function SiteFooter() {
               </ul>
 
               <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-[var(--ssh-nest-gold)]">
-                Respond
+                Information
               </p>
               <ul className="mt-5 grid gap-3">
                 {supportLinks.map((item) => (

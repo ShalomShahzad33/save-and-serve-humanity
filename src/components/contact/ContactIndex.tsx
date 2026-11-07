@@ -45,8 +45,7 @@ const contactChannels = [
 
 const publishChecks = [
   "Contact details now come from the confirmed SSH website source.",
-  "The message form still needs submission handling before it goes live.",
-  "Donation-specific contact wording can be added once donation details are confirmed."
+  "The message form still needs submission handling before it goes live."
 ];
 
 export function ContactIndex() {
@@ -204,7 +203,7 @@ export function ContactIndex() {
               Direct contact is live; the message form comes after handling is configured.
             </h2>
           </div>
-          <div className="grid gap-4 sm:grid-cols-3" data-motion-reveal>
+          <div className="grid gap-4 sm:grid-cols-2" data-motion-reveal>
             {publishChecks.map((check, index) => (
               <div className="border-l-2 border-[var(--ssh-blue)] bg-white p-6" key={check}>
                 {index === 0 ? (

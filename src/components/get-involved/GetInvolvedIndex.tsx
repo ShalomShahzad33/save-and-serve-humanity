@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BookOpenText, HandCoins, HeartHandshake, MessageCircle, ShieldCheck, UsersRound } from "lucide-react";
+import { BookOpenText, HeartHandshake, MessageCircle, ShieldCheck, UsersRound } from "lucide-react";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 
@@ -21,18 +21,10 @@ const involvementPaths = [
     icon: HeartHandshake
   },
   {
-    title: "Support a project",
-    eyebrow: "Giving with transparency",
-    description:
-      "Donation and campaign details are not published yet. This page prepares the support pathway without inventing GoFundMe links, bank details, goals, or progress numbers.",
-    status: "Donation method not configured",
-    icon: HandCoins
-  },
-  {
     title: "Share verified stories",
     eyebrow: "Help the archive travel responsibly",
     description:
-      "Until direct contact and donation details are approved, the safest public action is to read and share published stories that are grounded in real SSH records.",
+      "Read and share published stories that are grounded in real SSH records and presented with their original context.",
     status: "Available through the blog",
     icon: BookOpenText
   }
@@ -40,8 +32,8 @@ const involvementPaths = [
 
 const integrityNotes = [
   "No volunteer application is shown until SSH supplies the real process.",
-  "No donation method is shown until campaign or payment details are confirmed.",
-  "No phone, email, address, or social handle is published from unverified records."
+  "No partnership benefits or formal programs are promised without confirmed details.",
+  "Public contact details come from SSH's confirmed website source."
 ];
 
 export function GetInvolvedIndex() {
@@ -64,7 +56,7 @@ export function GetInvolvedIndex() {
               Serve with clarity, not guesswork.
             </h1>
             <p className="mt-6 max-w-[760px] text-lg leading-8 text-[var(--ssh-slate)] sm:text-xl">
-              SSH&apos;s public involvement page should help people understand meaningful ways to support the work while staying honest about what has not yet been configured: current contact details, volunteer intake, and donation pathways.
+              SSH&apos;s public involvement page helps people understand meaningful ways to participate while staying honest about volunteer intake and partnership processes that are still being defined.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/blog">Read Stories</ButtonLink>
@@ -104,7 +96,7 @@ export function GetInvolvedIndex() {
               </div>
 
               <p className="max-w-[560px] border-l border-[rgba(216,166,106,0.62)] pl-5 text-sm leading-6 text-white/72 sm:text-base sm:leading-7">
-                This first version prepares the involvement surface. It does not publish unverified contact channels or pretend that a donation system is live.
+                This first version connects visitors with confirmed contact details, published stories, and practical participation routes without inventing formal programs.
               </p>
             </div>
           </div>
@@ -126,7 +118,7 @@ export function GetInvolvedIndex() {
                 className="mt-3 font-display text-[clamp(2.2rem,4vw,3.8rem)] font-semibold leading-tight text-[var(--ssh-ink)]"
                 id="involvement-paths-title"
               >
-                Four paths, each waiting for the right real-world details.
+                Three practical paths grounded in real SSH work.
               </h2>
             </div>
             <p className="text-sm font-semibold text-[var(--ssh-slate)]">
@@ -134,7 +126,7 @@ export function GetInvolvedIndex() {
             </p>
           </div>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {involvementPaths.map((path) => {
               const Icon = path.icon;
 
@@ -193,7 +185,7 @@ export function GetInvolvedIndex() {
                 {index === 0 ? (
                   <UsersRound aria-hidden="true" className="h-5 w-5 text-[var(--ssh-blue)]" />
                 ) : index === 1 ? (
-                  <HandCoins aria-hidden="true" className="h-5 w-5 text-[var(--ssh-blue)]" />
+                  <HeartHandshake aria-hidden="true" className="h-5 w-5 text-[var(--ssh-blue)]" />
                 ) : (
                   <ShieldCheck aria-hidden="true" className="h-5 w-5 text-[var(--ssh-blue)]" />
                 )}
@@ -220,7 +212,7 @@ export function GetInvolvedIndex() {
               className="mt-4 max-w-[620px] font-display text-[clamp(2.2rem,4vw,3.8rem)] font-semibold leading-tight text-[var(--ssh-ink)]"
               id="involvement-contact-title"
             >
-              Direct contact comes next, once official details are supplied.
+              Direct contact is available for questions and collaboration.
             </h2>
           </div>
           <div className="rounded-[28px] border border-[var(--ssh-border)] bg-[var(--ssh-warm-white)] p-6 sm:p-8" data-motion-reveal>
@@ -228,10 +220,10 @@ export function GetInvolvedIndex() {
               <MessageCircle aria-hidden="true" className="h-7 w-7" />
             </div>
             <p className="mt-6 max-w-[760px] text-lg leading-8 text-[var(--ssh-slate)] sm:text-xl">
-              The contact page should publish verified email, phone, address, social links, and any inquiry form behavior only after SSH confirms them. Until then, this page points visitors toward the verified story and impact archive.
+              Use SSH&apos;s confirmed email or phone details to ask about volunteering, partnerships, records, or current community work.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/gallery" variant="secondary">View Gallery</ButtonLink>
+              <ButtonLink href="/contact">Contact SSH</ButtonLink>
               <ButtonLink href="/blog" variant="secondary">Explore Stories</ButtonLink>
             </div>
           </div>

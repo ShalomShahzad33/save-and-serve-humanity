@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, HandCoins, HeartHandshake, UsersRound } from "lucide-react";
+import { ArrowRight, BookOpenText, HeartHandshake, UsersRound } from "lucide-react";
 
 const responsePaths = [
   {
@@ -15,10 +15,10 @@ const responsePaths = [
     icon: HeartHandshake
   },
   {
-    title: "Support",
+    title: "Share",
     description:
-      "Donation details are not configured yet; the donate page is prepared for the approved giving pathway when SSH provides it.",
-    icon: HandCoins
+      "Read and share verified SSH stories so documented service reaches people with its context intact.",
+    icon: BookOpenText
   }
 ] as const;
 
@@ -101,17 +101,6 @@ export function HomeGetInvolved() {
                 </div>
               );
             })}
-
-            <p className="border-l-2 border-[var(--ssh-nest-gold)] bg-white px-5 py-4 text-sm leading-6 text-[var(--ssh-slate)]">
-              For donation readiness, visit the 
-              <Link
-                className="font-semibold text-[var(--ssh-blue)] underline decoration-[var(--ssh-border)] underline-offset-4 transition duration-200 hover:text-[var(--ssh-blue-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-orange)]"
-                href="/donate"
-              >
-                donate page
-              </Link>
-              ; no live giving method is shown until SSH confirms the details.
-            </p>
           </div>
         </div>
       </div>

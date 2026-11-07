@@ -40,7 +40,6 @@ export function HomeHero() {
             className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center"
             data-hero-reveal
           >
-            <ButtonLink href="/donate">Donate Now</ButtonLink>
             <ButtonLink href="/our-work">Explore Our Work</ButtonLink>
             <ButtonLink href="/about" variant="secondary">
               Read Our Story

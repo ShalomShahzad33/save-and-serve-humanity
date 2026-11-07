@@ -618,23 +618,16 @@ The current project documents refine this into a controlled archive image trail 
 
 ---
 
-# 27. Donation / GoFundMe Planning
+# 27. Donation Pathway
 
-The user previously discussed integrating GoFundMe directly into the website, ideally showing fundraising/campaign progress.
+On 7 November 2026, the user instructed that the donation route, donation calls
+to action, donor references, and placeholders for missing giving information be
+removed from the public website.
 
-**Status:** `PLANNED FEATURE / NOT CURRENT ORGANIZATION FACT`
+**Status:** `REMOVED / DO NOT PUBLISH`
 
-Current GoFundMe campaign URL:
-
-`UNKNOWN`
-
-Current campaign amount/goal/progress:
-
-`UNKNOWN`
-
-Do not build fake progress data.
-
-Do not add a payment/donation workflow until real details are supplied.
+Do not expose a `/donate` route or donation-related placeholder copy unless the
+user gives a new explicit instruction and supplies the approved details.
 
 ---
 

@@ -1,5 +1,5 @@
 ﻿import Link from "next/link";
-import { ArrowRight, BookOpenText, HeartHandshake, Mail } from "lucide-react";
+import { ArrowRight, BookOpenText, Mail } from "lucide-react";
 
 import { ButtonLink } from "@/components/ui/ButtonLink";
 
@@ -45,22 +45,21 @@ export function HealthCta() {
             <p className="text-lg leading-8 text-white/76 sm:text-xl sm:leading-9">
               SSH&apos;s health page is built from verified archive material.
               Visitors can continue into the published stories, ask for current
-              details, or use the Donate page while final giving information is
-              completed.
+              details, or view the wider image archive.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/blog">Read Health Stories</ButtonLink>
               <Link
                 className="inline-flex min-h-12 items-center justify-center rounded-[14px] border border-white/18 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-white/16 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-nest-gold)]"
-                href="/donate"
+                href="/gallery"
               >
-                Donate Now
+                View Gallery
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-3">
+        <div className="mt-12 grid gap-4 lg:grid-cols-2">
           {supportLinks.map((item) => {
             const Icon = item.icon;
 
@@ -90,28 +89,6 @@ export function HealthCta() {
             );
           })}
 
-          <div className="rounded-[24px] border border-[var(--ssh-nest-gold)]/35 bg-[var(--ssh-nest-gold)]/12 p-6 sm:p-7">
-            <div className="flex h-12 w-12 items-center justify-center rounded-[16px] bg-[var(--ssh-nest-gold)]/18 text-[var(--ssh-nest-gold)]">
-              <HeartHandshake aria-hidden="true" className="h-5 w-5" />
-            </div>
-            <h3 className="mt-6 font-display text-3xl font-semibold leading-tight">
-              Donate when ready
-            </h3>
-            <p className="mt-4 text-base leading-7 text-white/70">
-              The Donate page is present, but final payment and giving details
-              have not been supplied yet.
-            </p>
-            <Link
-              className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-nest-gold)]"
-              href="/donate"
-            >
-              View Donate Page
-              <ArrowRight
-                aria-hidden="true"
-                className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
-              />
-            </Link>
-          </div>
         </div>
       </div>
     </section>

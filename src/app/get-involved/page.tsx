@@ -7,7 +7,7 @@ import { UnderDevelopmentNotice } from "@/components/ui/DevelopmentNotice";
 export const metadata: Metadata = {
   title: "Get Involved",
   description:
-    "Practical ways to learn about supporting Save and Serve Humanity while volunteer, contact, and donation details are being confirmed."
+    "Practical ways to volunteer, partner, share verified stories, and contact Save and Serve Humanity."
 };
 
 export default function GetInvolvedPage() {
@@ -15,12 +15,11 @@ export default function GetInvolvedPage() {
     <>
       <GetInvolvedIndex />
       <UnderDevelopmentNotice
-        title="Volunteer, partner, and support workflows are under development."
-        description="This page outlines the honest support pathways. The actual forms, intake process, partner route, and donation handling should only go live after SSH confirms the real-world details."
+        title="Volunteer and partner workflows are under development."
+        description="The public contact route is available now. Formal volunteer intake and partnership processes will go live after SSH confirms the real-world details."
         items={[
           "Volunteer intake process",
           "Partner inquiry route",
-          "Project support pathway",
           "Privacy and follow-up wording"
         ]}
         href="/contact"

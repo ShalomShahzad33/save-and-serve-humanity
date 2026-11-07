@@ -3,7 +3,6 @@ import {
   AtSign,
   ChartNoAxesCombined,
   CircleUserRound,
-  CreditCard,
   ExternalLink,
   Server,
   ShieldCheck
@@ -27,11 +26,6 @@ const currentFootprint = [
     icon: CircleUserRound
   },
   {
-    label: "No payment collection",
-    detail: "No donation form or payment processor is currently connected.",
-    icon: CreditCard
-  },
-  {
     label: "No analytics added",
     detail: "SSH has not added analytics or advertising trackers to this build.",
     icon: ChartNoAxesCombined
@@ -53,7 +47,7 @@ const policySections = [
         <p>
           The website is primarily a public information and story archive. It
           does not currently provide visitor accounts, a direct message form,
-          volunteer applications, or online donation processing.
+          or volunteer applications.
         </p>
       </>
     )
@@ -127,9 +121,9 @@ const policySections = [
     content: (
       <>
         <p>
-          The website may link to email, telephone, social, fundraising, or
-          other third-party services. Following an external link means that
-          service&apos;s own privacy terms and security practices apply.
+          The website may link to email, telephone, social, or other third-party
+          services. Following an external link means that service&apos;s own privacy
+          terms and security practices apply.
         </p>
         <p>
           A third-party link does not give SSH control over how that provider
@@ -167,8 +161,8 @@ const policySections = [
       <>
         <p>
           This website is still being completed in phases. Contact forms,
-          volunteer workflows, analytics, fundraising services, or embedded
-          media may change how personal information is handled.
+          volunteer workflows, analytics, or embedded media may change how
+          personal information is handled.
         </p>
         <p>
           This notice will be revised when those features become active. The
@@ -225,11 +219,11 @@ export function PrivacyIndex() {
             </h1>
             <p className="mt-7 max-w-[680px] text-lg leading-8 text-white/72 sm:text-xl">
               This notice reflects the SSH website as it works today. It will
-              be revised when forms, analytics, donation processing, or other
-              data-handling services are introduced.
+              be revised when forms, analytics, or other data-handling services
+              are introduced.
             </p>
             <p className="mt-8 font-metric text-sm font-semibold uppercase tracking-[0.14em] text-white/48">
-              Last updated 25 October 2026
+              Last updated 7 November 2026
             </p>
           </div>
 

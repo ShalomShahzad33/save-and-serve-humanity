@@ -28,7 +28,6 @@ Core launch architecture:
 /blog/[slug]
 /gallery
 /get-involved
-/donate
 /contact
 /privacy
 /404
@@ -896,59 +895,13 @@ Do not create a fake volunteer application workflow.
 
 ---
 
-# Donate
+# Donation Route
 
-Route:
+There is no public donation route.
 
-`/donate`
-
-## Purpose
-
-Provide a clear, transparent support pathway once donation details are confirmed.
-
----
-
-## Critical Rule
-
-Do not invent donation methods.
-
-Do not launch fake payment forms.
-
-Do not display fake campaign progress.
-
----
-
-## Future Donate Page Sections
-
-### Hero
-
-### Why Support SSH
-
-Use approved factual copy.
-
-### Current Campaign
-
-Only if supplied.
-
-### Donation Method
-
-Could use:
-
-- GoFundMe link/embed
-- another approved fundraising provider
-- direct bank/payment instructions supplied by SSH
-
-### Transparency / Use of Support
-
-Only include real information.
-
-### FAQ
-
-Only real donation questions.
-
-### Contact
-
-For donation questions.
+The user removed donation calls to action and placeholders for missing giving
+information on 7 November 2026. Do not restore `/donate` without a new explicit
+instruction from the user.
 
 ---
 

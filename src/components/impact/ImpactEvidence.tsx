@@ -14,7 +14,7 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 
 const guardrails = [
   "No current lifetime medical-camp total is claimed from partial records.",
-  "No total beneficiaries, volunteers, donors, or financial impact numbers are estimated.",
+  "No total beneficiaries, volunteers, or financial impact numbers are estimated.",
   "Known places are examples tied to specific records, not SSH's full geographic footprint.",
   "Event numbers and patient counts are attached only to the records that supplied them."
 ];

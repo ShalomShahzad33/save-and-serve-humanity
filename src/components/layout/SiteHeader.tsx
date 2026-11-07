@@ -62,14 +62,6 @@ export function SiteHeader() {
           </ul>
         </nav>
 
-        <Link
-          className="hidden min-h-11 items-center rounded-[14px] bg-[var(--ssh-blue)] px-5 text-sm font-semibold text-white transition duration-200 hover:-translate-y-0.5 hover:bg-[var(--ssh-blue-800)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-orange)] lg:inline-flex"
-          href="/donate"
-          prefetch={false}
-        >
-          Donate Now
-        </Link>
-
         <button
           aria-controls="mobile-menu"
           aria-expanded={menuOpen}
@@ -106,17 +98,6 @@ export function SiteHeader() {
                 </Link>
               </li>
             ))}
-            <li className="pt-3">
-              <Link
-                className="inline-flex min-h-12 items-center rounded-[14px] bg-[var(--ssh-blue)] px-5 text-base font-semibold text-white"
-                href="/donate"
-                prefetch={false}
-                tabIndex={menuOpen ? 0 : -1}
-                onClick={() => setMenuOpen(false)}
-              >
-                Donate Now
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>

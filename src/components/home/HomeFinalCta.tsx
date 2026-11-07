@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, HandCoins, MapPin, Phone } from "lucide-react";
+import { ArrowRight, MapPin, Phone } from "lucide-react";
 
 const contactDetails = [
   {
@@ -48,9 +48,8 @@ export function HomeFinalCta() {
                 className="mt-7 max-w-[760px] text-lg leading-8 text-white/76 sm:text-xl"
                 data-motion-reveal
               >
-                Explore SSH&apos;s work, start a conversation, or visit the
-                prepared donation page while official giving details are still
-                being confirmed.
+                Explore SSH&apos;s work, read the documented stories, or start a
+                direct conversation with the organization.
               </p>
 
               <div
@@ -79,20 +78,15 @@ export function HomeFinalCta() {
                 </Link>
                 <Link
                   className="group inline-flex min-h-12 w-fit items-center justify-center gap-2 rounded-[14px] border border-[rgba(216,166,106,0.52)] px-5 py-3 text-sm font-semibold text-[var(--ssh-nest-gold)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--ssh-nest-gold)] hover:bg-white/8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-nest-gold)]"
-                  href="/donate"
+                  href="/blog"
                 >
-                  Donate Now
-                  <HandCoins aria-hidden="true" className="h-4 w-4" />
+                  Read Stories
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+                  />
                 </Link>
               </div>
-
-              <p
-                className="mt-5 max-w-[580px] text-sm leading-6 text-white/58"
-                data-motion-reveal
-              >
-                Donation information has not been provided yet; the donate page
-                is ready for SSH&apos;s approved giving details when confirmed.
-              </p>
             </div>
 
             <aside
