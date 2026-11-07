@@ -44,12 +44,19 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     };
   }
 
+  const canonicalPath = `/blog/${post.meta.slug}`;
+
   return {
-    title: post.meta.title + " | " + siteMeta.name,
+    title: post.meta.title,
     description: post.meta.description,
+    alternates: {
+      canonical: canonicalPath
+    },
     openGraph: {
       title: post.meta.title,
       description: post.meta.description,
+      url: canonicalPath,
+      siteName: siteMeta.name,
       images: [
         {
           url: post.meta.cover,
@@ -59,6 +66,12 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       type: "article",
       publishedTime: post.meta.date,
       modifiedTime: post.meta.updated
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.meta.title,
+      description: post.meta.description,
+      images: [post.meta.cover]
     }
   };
 }
@@ -78,14 +91,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     description: post.meta.description,
     datePublished: post.meta.date,
     dateModified: post.meta.updated ?? post.meta.date,
-    image: post.meta.cover,
+    image: new URL(post.meta.cover, siteMeta.url).toString(),
     author: {
       "@type": "Organization",
       name: post.meta.author ?? siteMeta.name
     },
     publisher: {
       "@type": "Organization",
-      name: siteMeta.name
+      name: siteMeta.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${siteMeta.url}/brand/ssh-logo-transparent.png`
+      }
     },
     mainEntityOfPage: siteMeta.url + "/blog/" + post.meta.slug
   };

@@ -4,12 +4,31 @@ import { BlogClosingCta } from "@/components/blog/BlogClosingCta";
 import { BlogFeatureArchive } from "@/components/blog/BlogFeatureArchive";
 import { BlogStoryArchive } from "@/components/blog/BlogStoryArchive";
 import { ScrollRevealMotion } from "@/components/motion/ScrollRevealMotion";
+import { siteMeta } from "@/data/site";
 import { getAllPosts } from "@/lib/content/blog";
+
+const blogDescription =
+  "Stories and records from Save and Serve Humanity's health, youth, and community service archive.";
+const blogSocialImage = "/media/blog/160th-free-medical-camp/cover.png";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description:
-    "Stories and records from Save and Serve Humanity's health, youth, and community service archive."
+  description: blogDescription,
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: `Stories | ${siteMeta.name}`,
+    description: blogDescription,
+    url: "/blog",
+    siteName: siteMeta.name,
+    images: [{ url: blogSocialImage, alt: "SSH's 160th free medical camp." }],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Stories | ${siteMeta.name}`,
+    description: blogDescription,
+    images: [blogSocialImage]
+  }
 };
 
 export default async function BlogPage() {

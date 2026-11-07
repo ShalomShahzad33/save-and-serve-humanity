@@ -3,12 +3,36 @@
 import { GalleryIndex } from "@/components/gallery/GalleryIndex";
 import { ScrollRevealMotion } from "@/components/motion/ScrollRevealMotion";
 import { UnderDevelopmentNotice } from "@/components/ui/DevelopmentNotice";
+import { siteMeta } from "@/data/site";
 import { getAllPosts } from "@/lib/content/blog";
+
+const galleryDescription =
+  "A careful public gallery for approved Save and Serve Humanity photographs connected to real stories and activities.";
+const gallerySocialImage = "/media/home/hero-160th-free-medical-camp.jpg";
 
 export const metadata: Metadata = {
   title: "Gallery",
-  description:
-    "A careful public gallery for approved Save and Serve Humanity photographs connected to real stories and activities."
+  description: galleryDescription,
+  alternates: { canonical: "/gallery" },
+  openGraph: {
+    title: `Gallery | ${siteMeta.name}`,
+    description: galleryDescription,
+    url: "/gallery",
+    siteName: siteMeta.name,
+    images: [
+      {
+        url: gallerySocialImage,
+        alt: "People gathered at Save and Serve Humanity's 160th free medical camp."
+      }
+    ],
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Gallery | ${siteMeta.name}`,
+    description: galleryDescription,
+    images: [gallerySocialImage]
+  }
 };
 
 export default async function GalleryPage() {
