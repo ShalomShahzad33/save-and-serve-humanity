@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, BadgeInfo } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 type UnderDevelopmentNoticeProps = {
   eyebrow?: string;
@@ -98,40 +98,6 @@ function ConstructionMark({ className = "" }: { className?: string }) {
         strokeWidth="4"
       />
     </svg>
-  );
-}
-
-export function DevelopmentBanner() {
-  return (
-    <aside
-      aria-label="Website development notice"
-      className="border-b border-[rgba(216,166,106,0.34)] bg-[var(--ssh-blue-950)] text-white"
-    >
-      <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-3 px-5 py-3 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-12">
-        <div className="flex items-start gap-3">
-          <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--ssh-nest-gold)]/16 text-[var(--ssh-nest-gold)]">
-            <BadgeInfo aria-hidden="true" className="h-4 w-4" />
-          </span>
-          <div>
-            <p className="text-sm font-semibold leading-6">
-              Website under development
-            </p>
-            <p className="max-w-[860px] text-sm leading-6 text-white/70">
-              This SSH rebuild is being completed in phases. Published stories
-              and archive sections are usable, while marked areas are still
-              waiting for confirmed details or final functionality.
-            </p>
-          </div>
-        </div>
-        <Link
-          className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--ssh-nest-gold)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--ssh-nest-gold)]"
-          href="/blog"
-        >
-          View published stories
-          <ArrowRight aria-hidden="true" className="h-4 w-4" />
-        </Link>
-      </div>
-    </aside>
   );
 }
 
